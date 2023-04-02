@@ -15,16 +15,22 @@ public class Avaliacao {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Funcionario funcionario1 = new Advogado("5555", "123456789", "12457878", "9595", Setor.JURIDICO, 3500);
+        Advogado funcionario1 = new Advogado ("2334", "06770699524", "1604094893", "191919", Setor.JURIDICO, 3000, 22, Genero.MASCULINO, 1234, "Matheus", "71986282035", "Matheus@gmail.com", 
+                new Endereco("Travessa Mário Kertéz", "10", "casa","40352020", "Salvador", UnidadeFederativa.BAHIA)) ;
         
-        Funcionario funcionario2 = new Medico("4040", "123789456", "456789123", "4569", Setor.SAUDE, 8000);
-        Funcionario funcionario3 = new Engenheiro("7894","456983172","456789121", "8989", Setor.ENGENHARIA, 4000);
+        Engenheiro funcionario2 = new Engenheiro("4545", "789456904", "490875423", "232323", Setor.ENGENHARIA, 4000, 26, Genero.FEMININO, 1313, "Amanda", "1232312344", "Amanda@gmail.com",
+                new Endereco("RuA Alberto Castro","23" , "casa", "4564598", "Rio Branco", UnidadeFederativa.ACRE));
         
+        Medico funcionario3 = new Medico ("5678", "234432567", "123489655", "353535", Setor.SAUDE, 8000, 56, Genero.FEMININO, 4321, "Clarisse", "43543656", "Clarissa@gmail.com", 
+                new Endereco("Alameda dos anjos", "134", "Apartamento", "12345681", "Recife", UnidadeFederativa.PERNAMBUCO));
+        
+        Cliente cliente1 = new Cliente(1234567890, 34, Genero.MASCULINO, 3423, "Gabriel", "71987652345", "Gabriel@gmail.com", 
+                new Endereco("Avenida Castro", "65", "casa", "40565633", "São Luís", UnidadeFederativa.MARANHÃO));
         
         System.out.println(funcionario1.toString());
         System.out.println(funcionario2.toString());
         System.out.println(funcionario3.toString());
-        
+        System.out.println(cliente1.toString());
     }
     
 }

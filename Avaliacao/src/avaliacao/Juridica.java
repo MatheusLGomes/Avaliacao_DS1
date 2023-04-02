@@ -13,9 +13,6 @@ public class Juridica extends Pessoa {
     protected String cnpj;
     protected String inscricaoEstadual;
 
-    public Juridica() {
-    }
-
     public Juridica(String cnpj, String inscricaoEstadual, int id, String nome, String telefone, String email, Endereco endereco) {
         super(id, nome, telefone, email, endereco);
         this.cnpj = cnpj;
@@ -38,16 +35,11 @@ public class Juridica extends Pessoa {
         this.inscricaoEstadual = inscricaoEstadual;
     }
 
-    @Override
-    public String toString() {
-        return "Juridica: " + super.id + 
-        "\nNome: " + super.nome + 
-            "\nTelefone: " + super.telefone +
-                  "\nEmail: " + super.email +
-                    "\nEndereço: " + super.endereco +
-                      "\nCNPJ: " + this.cnpj + 
-                         "\nInscrição Estadual: " + this.inscricaoEstadual;
-    }
     
     
+
+   
+   
+    
+   
 }

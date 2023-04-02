@@ -9,17 +9,15 @@ package avaliacao;
  *
  * @author Aluno
  */
-public abstract class Funcionario {
+ public abstract class Funcionario extends Fisica{
     protected String cpf;
     protected String rg;
     protected String matricula;
     protected Setor setor;
     protected double salario;
 
-    public Funcionario() {
-    }
-
-    public Funcionario(String cpf, String rg, String matricula, Setor setor, double salario) {
+    public Funcionario(String cpf, String rg, String matricula, Setor setor, double salario, int idade, Genero genero, int id, String nome, String telefone, String email, Endereco endereco) {
+        super(idade, genero, id, nome, telefone, email, endereco);
         this.cpf = cpf;
         this.rg = rg;
         this.matricula = matricula;
@@ -66,5 +64,7 @@ public abstract class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    
     
 }

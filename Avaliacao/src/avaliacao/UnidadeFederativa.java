@@ -41,8 +41,7 @@ TOCANTINS ("TO", "Tocantins");
 protected String sigla;
 protected String nome;
 
-    private UnidadeFederativa() {
-    }
+   
 
     private UnidadeFederativa(String sigla, String nome) {
         this.sigla = sigla;
@@ -65,4 +64,5 @@ protected String nome;
         this.nome = nome;
     }
 
+   
 }
